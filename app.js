@@ -720,7 +720,22 @@ selector n the document.
 String argument must all follow CSS syntax
 */
 
-                      Get And Manipulate Mulitple Elements
+/*                      Get And Manipulate Mulitple Elements
 getElementByClassName('class')
 returna a collection of all elemenet in the docuyment
 with specified class name
+
+return an array type collection but is not an array
+var icons = document.getElementsByClassName('fa');
+
+for(var i = 0; i < icons.length; i++){
+  console.log(icons[i]);
+}
+
+var iconsArr = Array.from(icons);
+console.log(iconsArr);
+console.log(icons);
+
+iconsArr.push("hello");
+console.log(iconsArr);
+*/
