@@ -684,17 +684,19 @@ let football = {
     name1: 'FSU',
     name2: 'Miami',
     name3: 'UCF',
-    eatDickMerkel(){
+    IhateyouMerkel(){
       console.log("Jerrod Paul " + jerrodPaul + " and "
       + love + " !");
       console.log("Brian Merkel " + brianMerkel + ", "
       + jerrodPaul + " and " + love + " !");
-
     }
 };
-football.eatDickMerkel();
+football.IhateyouMerkel();
 console.log("-------------------------------------------");
 console.log("Eat that big Dick Merk!!, Let's go Knights!")
 */
 // -------------------------------------------------------------
-//                         Document Object Mode DOM
+/*                         Document Object Mode DOM
+DOM is a collection of Nodes
+Everything in HTML document is Nodes
+*/
