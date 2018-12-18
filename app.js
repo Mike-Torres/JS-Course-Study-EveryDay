@@ -704,3 +704,23 @@ Everything in HTML document is Nodes
 /* getElementByID('#IDNAME') - returns the element that has ID attribute
 ID is a strong which can be used to identify the element found in HTML id attribute
 */
+
+/*                                 part 1
+Main Properties of DOM
+.textContent = Property set or returns the textual
+               content of specified node.
+
+innerHTML = property set or returns the HTML cotent of an Elements
+
+                                  part 2
+querySelector('selector') method
+
+returns the first element that matches a specified CSS
+selector n the document.
+String argument must all follow CSS syntax
+*/
+
+                      Get And Manipulate Mulitple Elements
+getElementByClassName('class')
+returna a collection of all elemenet in the docuyment
+with specified class name
