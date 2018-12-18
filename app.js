@@ -684,7 +684,7 @@ let football = {
     name1: 'FSU',
     name2: 'Miami',
     name3: 'UCF',
-    IhateyouMerkel(){
+    IhateyouMerkelgit(){
       console.log("Jerrod Paul " + jerrodPaul + " and "
       + love + " !");
       console.log("Brian Merkel " + brianMerkel + ", "
@@ -699,4 +699,8 @@ console.log("Eat that big Dick Merk!!, Let's go Knights!")
 /*                         Document Object Mode DOM
 DOM is a collection of Nodes
 Everything in HTML document is Nodes
+*/
+
+/* getElementByID('#IDNAME') - returns the element that has ID attribute
+ID is a strong which can be used to identify the element found in HTML id attribute
 */
