@@ -738,4 +738,112 @@ console.log(icons);
 
 iconsArr.push("hello");
 console.log(iconsArr);
+
+                  Get And Manipulate Mulitple Elements Part 2
+forEach() = method executes a provided function once
+for each array element.  USES FUNCTION AS A PARAMETER.
+
+var icons = document.getElementsByClassName('fa');
+
+//normal set up forEach(function(Value, Index, Array itself))
+
+Array.from(icons).forEach(function(icon, index, arr){
+  console.log(icon, index, arr);
+});
+
+GetElementsByTagName("tag"); = Returns collection of all elements
+in the documents with the specified tag name.
 */
+/*  MOST FREQUENTLY USED
+                     Get And Manipulate Mulitple Elements Part 3
+querySelectorAll('selector');
+Returns all Elements in the document that matches the
+specified CSS Selector.
+
+var lis = document.querySelectorAll('li, h2, #hide-list');
+console.log(lis);
+
+
+//lis.push("Hello"); Not an Array will get error - Need to
+// transform into array using Array.from
+
+Array.from(lis).forEach(function(li){
+  li.textContent = "Hello World";
+});
+*/
+    //                   DOM STYLES & Classes
+/*
+className = Get and set the value of class attribute
+of the specified element.
+Return String Value
+var h2 = document.querySelector('header h2');
+
+h2.className = 'changeBg'
+
+h2.className += ' changeFt';
+// assigned 2nd className - Removes first so background color in this case :
+// was removed and the heading font was created
+
+//var a = 10;
+// a += 20;
+//a = a + 20; same results inside
+console.log(typeof h2.className);
+
+/*
+var h2 = document.querySelector('header h2');
+h2.className = 'changeBg'
+
+h2.className += ' changeFt';
+// assigned 2nd className - Removes first so background color in this case :
+// was removed and the heading font was created
+HOW DO WE FIX THIS SO WE CAN HAVE BOTH... .EASY
+ClassName += 'tag name' - will combine them
+
+classList = returns the class names(s) of an element,
+DOMTokenList object.
+Userful to add remove and toggle CSS classes on an element.
+classList property is read-only
+
+var h2 = document.querySelector('header h2');
+
+h2.className = 'changeBg'
+
+h2.classList.add('changeFt');
+// doesn't make us use += property
+h2.classList.remove('changeBg');
+
+h2.classList.toggle('changeBg');
+
+console.log(h2.classList);
+*/
+//                     EVENTS - EXTREMELY IMPORTANT!!!!!!!
+
+Actions that happen on a web page you are programing.
+Event make web pages more interactive and dynamic.
+.onclick() one of the most frequently used events.
+
+var h2 = document.querySelector('header h2');
+
+h2.onclick = function() {
+  console.log('Clicked')
+}
+
+h2.onmouseover = function() {
+  console.log('Mouseover')
+}
+var h2 = document.querySelector('header h2');
+
+
+// Don't use this approach this is outdated.... only for legacy code.
+function a(){
+  console.log("Clicked");
+}
+
+function b(){
+  console.log("Mouseover");
+}
+
+
+                      EVENTS part 2 - EXTREMELY IMPORTANT!!!!!!!
+
+addEventListener() = Attaches an event handler to the specified element.
