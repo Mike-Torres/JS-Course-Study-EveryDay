@@ -816,7 +816,7 @@ h2.classList.toggle('changeBg');
 
 console.log(h2.classList);
 */
-//                     EVENTS - EXTREMELY IMPORTANT!!!!!!!
+/*                     EVENTS - EXTREMELY IMPORTANT!!!!!!!
 
 Actions that happen on a web page you are programing.
 Event make web pages more interactive and dynamic.
@@ -847,3 +847,93 @@ function b(){
                       EVENTS part 2 - EXTREMELY IMPORTANT!!!!!!!
 
 addEventListener() = Attaches an event handler to the specified element.
+var h2 = document.querySelector('header h2');
+
+h2.addEventListener("click", a);
+h2.addEventListener("click", b);
+  console.log('Clicked')
+
+
+function a(){
+  console.log('Clicked a');
+}
+function b(){
+  console.log('Clicked b');
+}
+*/
+/*
+Event Object = When an event occurs, the event object is created.
+in most cases, Event objects is expressed as (e);
+
+var h2 = document.querySelector('header h2');
+
+h2.addEventListener("click", a);
+
+function a() {
+  console.log(this);
+}
+
+or function a(e) {
+  console.log(e.target);
+}
+*/
+/*
+var div = document.querySelector('div.wrapper');
+var header = document.querySelector('header');
+var h2 = document.querySelector('header h2');
+
+
+div.addEventListener('click', function(){
+    var delay = new Date().getTime() + 1000;
+    while(new Date() < delay){}
+    console.log('From div');
+});
+
+header.addEventListener('click', function(){
+    var delay = new Date().getTime() + 1000;
+    while(new Date() < delay){}
+    console.log('From header')
+});
+
+h2.addEventListener('click', function(){
+    var delay = new Date().getTime() + 1000;
+    while(new Date() < delay){}
+    console.log('From h2')
+});
+*/
+/*
+var h2 = document.querySelector('header h2');
+
+h2.addEventListener('click', function() {
+    console.log('From click event')
+});
+
+function a() {
+  var delay = new Date().getTime() + 3000;
+  while(new Date() < delay){}
+  console.log("from function a")
+};
+a();
+
+console.log("global code is executed");
+*/
+
+/*                     GET AND SET ATTRIBUTES
+
+getAttribute("attr") = Returns the value of the ATTRIBUTE
+with the specified name of the element.
+
+setAttribute('attr', 'value') = two parameters
+Sets the value of an attrivute on the specified element
+If the attribute already exists, the value is updated.
+
+var btn = document.getElementById('add-btn');
+var input = document.getElementById('add-input');
+
+btn.addEventListener('click', function(e){
+  e.preventDefault();
+   console.log("Hello World");
+});
+*/
+
+                            DOM NAVIGATION
