@@ -743,6 +743,18 @@ console.log(iconsArr);
 forEach() = method executes a provided function once
 for each array element.  USES FUNCTION AS A PARAMETER.
 
+General Structure forEach method is as follows:
+it follows an IIA method function Meaning: (Item, Index, array)
+--------------------------------------------------------------
+var icons = document.getElementsByClassName('fa'); this is HTML collection
+Not an array
+so if we run into this and use the below method for ARRAY
+we will get an error.  must user Arrayfrom method.
+
+Array.from(varName).forEach(function(item, index, array){
+   console.log(varName, index, array)
+});
+----------------------------------------------------------------
 var icons = document.getElementsByClassName('fa');
 
 //normal set up forEach(function(Value, Index, Array itself))
@@ -936,4 +948,71 @@ btn.addEventListener('click', function(e){
 });
 */
 
-                            DOM NAVIGATION
+// --------------------------------------------------------------
+/*                           Creating Elements
+var newEl = document.createElement('button');
+
+var text = document.createTextNode('Click');
+
+
+newEl.appendChild(text);
+newEl.setAttribute('style', 'display: block; margin: 10px auto; padding: 5px 10px; background: coral; color: #fff;')
+
+console.log(newEl);
+
+var form = document.getElementById('add');
+
+//form.appendChild(newEl);
+
+form.insertBefore(newEl, form.children[0]);
+
+newEl.parentElement.removeChild(newEl);
+*/
+// --------------------------------------------------------------
+/*                           Everything is an Object
+
+function a(){
+  console.log("hello")
+};
+
+a['prop'] = 'Hi';
+
+a.obj = {
+  greet: 'Hey'
+}
+
+a.myFunc = function() {
+  console.log('Hola')
+}
+*/
+ //                               FUnction Constructors
+
+ const person1 = {};
+ person1.firstName = "John";
+ person1.lastName = "Smith";
+
+ const person2 = {};
+ person2.firstName = "Nick";
+ person2.lastName = "Doe";
+
+ /*function createPerson(firstName, lastName){
+   const newPerson = {};
+   newPerson.firstName = firstName;
+   newPerson.lastName = lastName;
+   return newPerson;
+  */
+
+function Person(firstName, lastName){
+
+  this.firstName = firstName;
+  this.lastName = lastName;
+
+}
+
+ const person3 = new Person("Bob", "Brown");
+ const person4 = new Person("Derek", "Henderson");
+
+ console.log(person1);
+ console.log(person2);
+ console.log(person3);
+ console.log(person4);
